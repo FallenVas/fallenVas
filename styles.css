@@ -1,0 +1,300 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  position: relative;
+  
+}
+.bg-image {
+  position: absolute;
+  background: url('https://images.unsplash.com/photo-1623495349319-e2e1c06efced?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+  filter: brightness(0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+header {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 30px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.search-bar {
+  display: flex;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 25px 0 0 25px;
+}
+
+.search-btn, .clear-btn {
+  padding: 8px 15px;
+  border: none;
+  background-color: #00695c;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.search-btn {
+  margin-right: 5px;
+}
+
+.clear-btn {
+  background-color: #ff5252;
+}
+  .hero {
+    width: 100vw;
+    height: 90vh;
+    
+  }
+  
+  .hero-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+    max-width: 600px;
+  }
+  
+  .cta-btn {
+    padding: 10px 30px;
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .social-links {
+    position: fixed;
+    left: 20px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-links a {
+    margin-bottom: 15px;
+  }
+  
+  .social-links a img {
+    width: 30px;
+  }
+  
+/* About Us Section */
+.about-us {
+  margin-left: 250px;
+  height: 400px;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  gap: 50px; width: 50%;
+  justify-content: center;
+}
+
+
+.about-us h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.mission-text p {
+  color: rgba(255, 255, 255, 0.516);
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Team Section */
+.team {
+  margin-left: 250px;
+  padding: 50px 0;
+}
+
+.team h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  gap: 50px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 18px;
+  color: #00695c;
+}
+.contact-us{
+  margin-left: 250px;
+  height: 400px;
+  position: relative;
+  
+  flex-direction: column;
+  display: flex;
+  gap: 100px;
+  width: 75%; 
+  height: 100%;
+  justify-content: center;
+}
+.contact-us h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.contact-us p {
+  color: rgba(255, 255, 255, 0.516);
+  text-align: justify;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.contact-form form {
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #008080;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005757;
+}
+#results {
+  margin-top: 20px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  display: none;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+}
+
+.place {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.place h3 {
+  margin-top: 0;
+}
+
+.place img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 5px;
+}
